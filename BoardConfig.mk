@@ -24,6 +24,11 @@ PRODUCT_PLATFORM := msm8998
 ### BOOTLOADER
 TARGET_BOOTLOADER_BOARD_NAME := G8441
 
+### ORANGEFOX
+# Plain make variables for the lunched device, the shared ones are in yoshino-common/vendorsetup.sh
+FOX_VARIANT := XZ1C
+FOX_TARGET_DEVICES := lilac,G8441,SO-02K
+
 ### KERNEL
 BOARD_KERNEL_CMDLINE += androidboot.hardware=lilac
 TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-lilac_defconfig
